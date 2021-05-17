@@ -1,3 +1,5 @@
+/* styles entire page */
+
 *,
 *::before
 *::after {
@@ -5,11 +7,15 @@
 }
 
 :root {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    --clr-primary: #a78686;
-    --clr-dark: #A9A9A9 ;
-    --clr-accent: #FFFAF0;
+    --ff-primary: Arial, Helvetica, sans-serif;
+    --ff-secondary:  Arial, Helvetica, sans-serif;
+    
+    --ff-reg: 300;
+    --fw-bold: 900;
+
+    --clr-accent: #fff;
+    --clr-dark: #303030 ;
+    --clr-light: #16e0bd;
 
     --fs-h1: 3rem; 
     --fs-h2: 2.25rem;
@@ -26,4 +32,66 @@
     }
  }  
 
- 
+ /* General styles */
+
+ body {
+     background: var(--clr-light);
+     color: var(--clr-dark) ;
+     margin: 0;
+     font-family: var(--ff-primary);
+     font-size: var(--fs-body);
+     line-height: 1.6;
+
+ }
+
+ section{
+     padding: 5em 2em;
+ }
+
+ img {
+     display: block;
+     max-width: 100%;
+ }
+
+ strong { font-weight: var(--fw-bold);
+ }
+
+/* Typography */
+
+h1, h2, h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 {font-size: var(--fs-h1); }
+h2 {font-size: var(--fs-h2); }
+h3 {font-size: var(--fs-h3); }
+
+
+.section__title {
+    margin-bottom: .25em;
+
+}
+
+.section__title--intro {
+    font-weight: var(--fw-reg);
+
+}
+
+.section__title--intro strong {
+    display: block;
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__title--intro, .section__title--about {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+
+}
+
+/* Intro section */
