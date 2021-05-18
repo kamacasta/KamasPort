@@ -12,68 +12,57 @@
     <!-- Header/Nav -->
     <header>
 
-        <h1>
-            <a href="/">Portfolio</a>
-        </h1>
-
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"> <a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"> <a href="#my-skills" class="nav__link">My Skills</a></li>
-                <li class="nav__item"> <a href="#about-me" class="nav__link">About Me</a></li>
-                <li class="nav__item"> <a href="#my-work" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
             </ul>
         </nav>
     </header>
-    <!-- end of header/nav -->
 
-    <!-- Intro/home -->
+    <!-- Introduction -->
     <section class="intro" id="home">
         <h1 class="section__title section__title--intro">
-            Hi, I am <strong> Kamakanui J Castaneda</strong>
+            Hi, I am <strong>Kamakanui Castaneda</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">boot camp dev</p>
-        <img src="./assets/images/Kama.jpg" alt=" a picture of kama staring into sunrise">
+        <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+        <img src="./assets/images/Kama.jpg" alt="kama staring into sunrise" class="intro__img">
     </section>
-    <!-- /intro home-->
 
 
-    <!-- My Skills -->
-    <section class="my-skills" id="skills">
-        <h2 class="skills__title section __title--skills"> My Skills</h2>
-        <div class="skills">
-            <div class="skill">
-                <h3>Graphic Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatum totam quasi 
-                 molestiae eveniet voluptatibus nihil, hic vero amet quaerat qui iste aut dolores, omnis
-                 cupiditate sequi aliquam ducimus! Optio! Lorem ipsum, dolor sit amet. 
-                 perferendis.</p>
-            </div> <!-- /skill -->
+    <!-- My services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div> <!-- / service -->
 
-            <div class="skill">
-                <h3>Adobe Illustrator</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatum totam quasi 
-                    molestiae eveniet voluptatibus nihil, hic vero amet quaerat qui iste aut dolores, omnis
-                    cupiditate sequi aliquam ducimus! Optio! Lorem ipsum, dolor sit amet. 
-                    perferendis.</p>
-            </div> <!-- /skill -->
+            <div class="service">
+                <h3>Developer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div> <!-- / service -->
 
-            <div class="skill">
-                <h3>HTML/CSS</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatum totam quasi 
-                    molestiae eveniet voluptatibus nihil, hic vero amet quaerat qui iste aut dolores, omnis
-                    cupiditate sequi aliquam ducimus! Optio! Lorem ipsum, dolor sit amet. 
-                    perferendis.</p>
-            </div> <!-- /skill -->
+            <div class="service">
+                <h3>Adobe</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div> <!-- / service -->
+        </div> <!-- / services -->
 
-        </div> <!--/skills-->
-        <a href="my-work" class="btn">My Work</a>
+        <a href="#work" class="btn">My Work</a>
     </section>
-    <!-- /My Skills -->
-
 
     <!-- About me -->
     <section class="about-me" id="about">
@@ -81,49 +70,58 @@
         <p class="section__subtitle section__subtitle--about"></p>
 
         <div class="about-me__body">
-            <p></p>
-            <p></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ratione temporibus, molestiae facere
+                suscipit illum dolorem excepturi facilis magni hic, ducimus at .</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis porro atque labore perferendis, dolorem
+                eaque id unde numquam illum, ratione magni autem molestiae.</p>
         </div>
 
-            <img src="./assets/images/Kama (2).jpg" alt=" kama smiling in a photo ">
-        
+        <img src="./assets/images/Kama (2).jpg" alt=" kama smiling in a photo " class="about-me__img">
+
     </section>
+    <!-- / About me-->
 
     <!-- My Work -->
     <section class="my-work" id="work">
-        <h2 class="section__title">My Work</h2>
-        <p class="section__subtitle"></p>
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work"></p>
 
         <div class="portfolio">
             <!-- Portfolio Item 1-->
-        <a href="https://kamacasta.github.io/Horiseon-Project/" class="portfolio__item">
-            <img src="./assets/images/Horiseon.png" alt="Kamas Horiseon project" class="portfolio__img">
-        </a>
+            <a href="https://kamacasta.github.io/Horiseon-Project/" class="portfolio__item">
+                <img src="./assets/images/Horiseon.png" alt="Kamas Horiseon project" class="portfolio__img">
+            </a>
+
             <!-- Portfolio Item 2-->
-        <a href="https://kamacasta.github.io/Run-Buddy-/" class="portfolio__item">
-            <img src="./assets/images/Run-Buddy.png" alt="" class="portfolio__img">
-        </a>
+            <a href="https://kamacasta.github.io/Run-Buddy-/" class="portfolio__item">
+                <img src="./assets/images/Run-Buddy.png" alt="" class="portfolio__img">
+            </a>
+
             <!-- Portfolio Item 3-->
-        <a href="#" class="portfolio__item">
-            <img src="" alt="" class="portfolio__img">
-        </a>
+            <a href="#" class="portfolio__item">
+                <img src="" alt="" class="portfolio__img">
+            </a>
+
             <!-- Portfolio item 4-->
-        <a href="#" class="portfolio__item">
-            <img src="" alt="" class="portfolio__img">
-        </a>
+            <a href="#" class="portfolio__item">
+                <img src="" alt="" class="portfolio__img">
+            </a>
 
         </div>
 
     </section>-->
     <!-- /My Work -->
 
-<footer>
-    <a href="kamacasta983@gmail.com" class="footer__link">kamacasta983@gmail.com</a>
-    <ul class="social-list">
-        <li class="social-list__item"><a class="social-list__link" href="https://github.com/kamacasta">github</a></li>
-        <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/kamakanui-aha-ilono-castaneda-9aa78420a/">linkedin</a></li>
-    </ul>
-</footer>
+    <footer>
+        <a href="mailto:kamacasta983@gmail.com" class="footer__link">kamacasta983@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com/kamacasta"><i
+                        class="fab fa-github"></i> </a></li>
+            <li class="social-list__item"><a class="social-list__link"
+                    href="https://www.linkedin.com/in/kamakanui-aha-ilono-castaneda-9aa78420a/"><i
+                        class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
 
 
 </body>
